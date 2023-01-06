@@ -23,8 +23,17 @@ export function search() {
   
   //Write your code here for the search function
 
-  return newsList.filter(function (element) {
-    return element.toLowerCase().indexOf(inputValue) > -1;
+  return newsList.filter(function (element) { //Filter the element that matches the condition given by the indexOf.
+    //The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+    //The filter() method creates a new array filled with elements that pass a test provided by a function.
+    //The filter() method does not execute the function for empty elements.
+    //The filter() method does not change the original array.
+
+    return element.toLowerCase().indexOf(inputValue) > -1;  //Finds the inputValue in the element using indexOf to search the index starting from zero position.
+    //The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+    //The indexOf() method returns the position of the first occurrence of a value in a string.
+    //The indexOf() method returns -1 if the value is not found.
+    //The indexOf() method is case sensitive.
   })
 }
 
